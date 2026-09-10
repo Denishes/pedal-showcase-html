@@ -1,7 +1,13 @@
 import { Button } from "@/components/ui/button";
+import { ShoppingCart } from "lucide-react";
 import heroPedal from "@/assets/hero-pedal.jpg";
 
 const Hero = () => {
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background z-0" />
@@ -36,11 +42,20 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all">
-                View Specifications
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all"
+                onClick={() => scrollTo("purchase")}
+              >
+                <ShoppingCart size={20} className="mr-2" />
+                Buy Now
               </Button>
-              <Button size="lg" variant="secondary">
-                Build Details
+              <Button 
+                size="lg" 
+                variant="secondary"
+                onClick={() => scrollTo("specifications")}
+              >
+                View Specifications
               </Button>
             </div>
           </div>
