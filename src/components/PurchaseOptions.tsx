@@ -19,7 +19,7 @@ const PurchaseOptions = () => {
               Get Your Pedal
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Choose your preferred marketplace. Both handle payment and shipping for a smooth, secure purchase.
+              Choose your preferred marketplace. Vinted handles payment, shipping, and the label automatically. OLX is for local, in-person sales in Portugal.
             </p>
           </div>
 
