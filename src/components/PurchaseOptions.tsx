@@ -19,32 +19,11 @@ const PurchaseOptions = () => {
               Get Your Pedal
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Choose your preferred marketplace. Both handle payment and shipping for a smooth, secure purchase.
+              Choose your preferred marketplace. Vinted handles payment, shipping, and the label automatically. OLX is for local, in-person sales in Portugal.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <a
-              href={OLX_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative p-8 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10"
-            >
-              <div className="flex flex-col h-full items-start">
-                <div className="mb-6 inline-flex p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                  <ShoppingBag size={28} />
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Buy on OLX</h3>
-                <p className="text-muted-foreground mb-6 flex-grow">
-                  Best for buyers in Portugal. Local pickup or shipping with buyer protection.
-                </p>
-                <Button className="w-full bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all group-hover:translate-y-[-2px]">
-                  View OLX Listing
-                  <ExternalLink size={18} className="ml-2" />
-                </Button>
-              </div>
-            </a>
-
             <a
               href={vintedActive ? VINTED_LINK : undefined}
               target={vintedActive ? "_blank" : undefined}
@@ -65,7 +44,7 @@ const PurchaseOptions = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Buy on Vinted</h3>
                 <p className="text-muted-foreground mb-6 flex-grow">
-                  Great for European buyers. Prepaid shipping labels and integrated tracking.
+                  Best for shipping anywhere in Europe. Vinted handles payment, automatically calculates shipping to the buyer's location, and generates the shipping label for you.
                 </p>
                 <Button
                   disabled={!vintedActive}
@@ -84,6 +63,27 @@ const PurchaseOptions = () => {
                   ) : (
                     "Listing Coming Soon"
                   )}
+                </Button>
+              </div>
+            </a>
+
+            <a
+              href={OLX_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative p-8 rounded-2xl bg-background border border-border hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10"
+            >
+              <div className="flex flex-col h-full items-start">
+                <div className="mb-6 inline-flex p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                  <ShoppingBag size={28} />
+                </div>
+                <h3 className="text-2xl font-bold mb-2">Buy on OLX</h3>
+                <p className="text-muted-foreground mb-6 flex-grow">
+                  Best for local, in-person sales in Portugal. You arrange the meetup and handle shipping yourself if needed.
+                </p>
+                <Button className="w-full bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all group-hover:translate-y-[-2px]">
+                  View OLX Listing
+                  <ExternalLink size={18} className="ml-2" />
                 </Button>
               </div>
             </a>
