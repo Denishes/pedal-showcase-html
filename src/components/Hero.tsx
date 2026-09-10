@@ -1,7 +1,13 @@
 import { Button } from "@/components/ui/button";
+import { ShoppingCart } from "lucide-react";
 import heroPedal from "@/assets/hero-pedal.jpg";
 
 const Hero = () => {
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background z-0" />
