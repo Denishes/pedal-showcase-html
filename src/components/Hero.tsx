@@ -42,11 +42,20 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all">
-                View Specifications
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-primary to-accent hover:shadow-glow transition-all"
+                onClick={() => scrollTo("purchase")}
+              >
+                <ShoppingCart size={20} className="mr-2" />
+                Buy Now
               </Button>
-              <Button size="lg" variant="secondary">
-                Build Details
+              <Button 
+                size="lg" 
+                variant="secondary"
+                onClick={() => scrollTo("specifications")}
+              >
+                View Specifications
               </Button>
             </div>
           </div>
