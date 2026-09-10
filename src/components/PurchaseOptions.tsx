@@ -4,6 +4,7 @@ import { ExternalLink, ShoppingBag, Truck } from "lucide-react";
 const OLX_LINK = "https://www.olx.pt/d/anuncio/pedais-de-guitarra-boost-IDJfFSQ.html?search_reason=search%7Corganic";
 // Paste your Vinted listing URL here when it's ready
 const VINTED_LINK = "";
+const vintedActive = VINTED_LINK.length > 0;
 
 const PurchaseOptions = () => {
   return (
