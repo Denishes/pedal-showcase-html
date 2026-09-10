@@ -91,12 +91,12 @@ const PurchaseOptions = () => {
 
           <p className="mt-8 text-center text-sm text-muted-foreground">
             Prefer a direct sale?{" "}
-            <button
-              onClick={scrollToPurchase}
+            <a
+              href="#contact"
               className="text-primary hover:underline"
             >
               Contact me
-            </button>{" "}
+            </a>{" "}
             and I can arrange a custom order.
           </p>
         </div>
