@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Specifications from "@/components/Specifications";
 import BuildDetails from "@/components/BuildDetails";
+import PurchaseOptions from "@/components/PurchaseOptions";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -11,6 +12,7 @@ const Index = () => {
       <Features />
       <Specifications />
       <BuildDetails />
+      <PurchaseOptions />
       <Footer />
     </div>
   );
