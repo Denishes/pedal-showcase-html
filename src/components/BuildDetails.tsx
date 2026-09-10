@@ -1,4 +1,4 @@
-import circuitDetail from "@/assets/circuit-detail.jpg";
+import circuitDetail from "@/assets/pcb-circuit-design.png.asset.json";
 import controlsDetail from "@/assets/controls-detail.jpg";
 
 const BuildDetails = () => {
