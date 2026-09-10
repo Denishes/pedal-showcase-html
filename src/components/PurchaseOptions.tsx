@@ -2,14 +2,10 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, ShoppingBag, Truck } from "lucide-react";
 
 const OLX_LINK = "https://www.olx.pt/d/anuncio/pedais-de-guitarra-boost-IDJfFSQ.html?search_reason=search%7Corganic";
-const VINTED_LINK = "#"; // Update this when your Vinted listing is ready
+// Paste your Vinted listing URL here when it's ready
+const VINTED_LINK = "";
 
 const PurchaseOptions = () => {
-  const scrollToPurchase = () => {
-    const element = document.getElementById("purchase");
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section id="purchase" className="py-24 bg-card/50">
       <div className="container mx-auto px-6">
