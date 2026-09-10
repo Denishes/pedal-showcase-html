@@ -44,7 +44,7 @@ const PurchaseOptions = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Buy on Vinted</h3>
                 <p className="text-muted-foreground mb-6 flex-grow">
-                  Best for shipping anywhere in Europe. Vinted handles payment, automatically calculates shipping to the buyer's location, and generates the shipping label for you.
+                  Purchase securely through Vinted With protected Payment and convenient delivery options.
                 </p>
                 <Button
                   disabled={!vintedActive}
