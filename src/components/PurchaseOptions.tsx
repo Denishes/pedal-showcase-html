@@ -2,8 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, ShoppingBag, Truck } from "lucide-react";
 
 const OLX_LINK = "https://www.olx.pt/d/anuncio/pedais-de-guitarra-boost-IDJfFSQ.html?search_reason=search%7Corganic";
-// Paste your Vinted listing URL here when it's ready
-const VINTED_LINK = "";
+const VINTED_LINK = "https://www.vinted.pt/items/9961528495-guitar-pedal-boost";
 const vintedActive = VINTED_LINK.length > 0;
 
 const PurchaseOptions = () => {
