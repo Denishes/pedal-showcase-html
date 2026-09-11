@@ -46,7 +46,7 @@ const BuildDetails = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="relative rounded-xl overflow-hidden border border-primary/20 group">
               <img 
-                src={circuitDetail.url} 
+                src={circuitDetail} 
                 alt="PCB circuit board design with measurements"
                 className="w-full h-96 object-cover transition-transform group-hover:scale-105"
               />
