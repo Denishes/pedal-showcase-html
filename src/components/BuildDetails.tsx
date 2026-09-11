@@ -1,4 +1,4 @@
-import circuitDetail from "@/assets/pcb-circuit-design.png.asset.json";
+import circuitDetail from "@/assets/circuit-board.png";
 import controlsDetail from "@/assets/controls-detail.jpg";
 
 const BuildDetails = () => {
@@ -46,7 +46,7 @@ const BuildDetails = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="relative rounded-xl overflow-hidden border border-primary/20 group">
               <img 
-                src={circuitDetail.url} 
+                src={circuitDetail} 
                 alt="PCB circuit board design with measurements"
                 className="w-full h-96 object-cover transition-transform group-hover:scale-105"
               />
