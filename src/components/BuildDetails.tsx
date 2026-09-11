@@ -43,12 +43,12 @@ const BuildDetails = () => {
             </div>
           </div>
           
-          <div className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <div className="relative rounded-xl overflow-hidden border border-primary/20 group">
               <img 
                 src={circuitDetail.url} 
                 alt="PCB circuit board design with measurements"
-                className="w-full h-64 object-cover transition-transform group-hover:scale-105"
+                className="w-full h-96 object-cover transition-transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               <div className="absolute bottom-4 left-4">
@@ -62,7 +62,7 @@ const BuildDetails = () => {
               <img 
                 src={controlsDetail} 
                 alt="Control details"
-                className="w-full h-64 object-cover transition-transform group-hover:scale-105"
+                className="w-full h-96 object-cover transition-transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               <div className="absolute bottom-4 left-4">
